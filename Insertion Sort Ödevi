@@ -1,0 +1,29 @@
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
+1-) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+2-) Big-O gösterimini yazınız.
+3-) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+4-) [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Cevaplar:
+Cavep 1-) Dizi  [22,27,16,2,18,6] 
+1. Aşama  [2,27,16,22,18,6] ---> 2 ve 22 yer değiştiriyor ve 2 en başa geçer
+2. Aşama  [2,6,16,22,18,27] ---> 6 ve 27 yer değiştiriyor ve ilk 2 eleman belirlenir
+3. Aşama  [2,6,16,22,18,27] ---> 16 için arama yapıyor ancak kendinden küçük sayı bulamadığı için aynen kalıyor ve sonrakien geçiyor ve ilk 3 eleman belirlenir
+4. aşaama [2,6,16,18,22,27] ----> 18 ve 22 yer değiştiriyor ve ilk 4 eleman belli oluyor.
+5. aşaama [2,6,16,18,22,27] ----> 22 için arama yapıyor ancak kendinden küçük sayı bulamadığı için aynen kalıyor ve sonrakien geçiyor.
+6. Aşama  [2,6,16,18,22,27] ----> 27 en son sayı ve otomatik olarak en büyük olduğu için aynen kalıyor.
+Cevap 2-) Big-O gösterimini yazınız.
+n tane işlem yağtığı için
+(n. (n+1))/2 = ( n^2 + n ) / 2 = dominant faktor = n^2 = O(n^2) Time complexity aynı zamanda Worst case senaryosu.
+Cevap 3-) Average case: Aradığımız sayının ortada olması. 
+Cevap 4-)   [7,3,5,8,2,9,4,15,6] ilk 4 aşaması
+
+1. Aşama [2,3,5,8,7,9,4,15,6] ---> 7 ve 2 yer değiştirir, 2 en başa geçer
+2. Aşama [2,3,5,8,7,9,4,15,6] ---> 3 kendinden küçük bulamadığı için aynen kalır ve sonrakine geçer, ilk 2 belli olur
+3. Aşama [2,3,4,8,7,9,5,15,6] ---> 4 ve 5 yer değiştirir, ilk 3 belli olur
+4. Aşama [2,3,4,5,7,9,8,15,6] --->  5 ve 8 yer değiştirir ilk 4 belli olur.
+
